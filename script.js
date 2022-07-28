@@ -21,7 +21,7 @@ function sumInput() {
 
 function saveValue() {  
     let input = document.querySelector('input').value;
-    if (input === "" || input === null ||input.charAt(0) === ' '|| !isFinite(input)){
+    if (!input ||input.charAt(0) === ' '|| !isFinite(input)){
     sumInput();
     }    
     arr.push(+input);    
